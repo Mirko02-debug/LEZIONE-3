@@ -1,0 +1,85 @@
+/* CSS RESET */
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 100px;
+    background-color: orangered;
+    opacity: 0.9;
+
+}
+/* Foto */
+.foto {
+     height: 400px;
+     width: 300px;
+     border: 2px solid black;
+     border-radius: 25px;
+     background-image: url(foto\ pinterest.jpg);
+     background-size: cover;
+     box-shadow: 0 5px 8px rgba(0,0,0,0.5);
+     position: relative;
+     margin-left: 10%;
+     overflow: hidden;
+     
+     
+    }
+
+    
+
+
+
+/* BUTTON SAVE */
+    .save {
+        position: absolute;
+        background-color: red;
+        border-radius: 28px;
+        right: 30px;
+        top: -40px;
+        color: white;
+        padding: 8px;
+        transition: top 0.3s ease-in-out;
+    }
+
+    /* HOVER SECTION */
+  .foto:hover .save {
+       top: 20px;
+    }
+
+    .foto:hover .label,
+    .foto:hover .share,
+    .foto:hover .dots {
+        bottom: 20px;
+    }
+
+    .label:hover,
+    .share:hover,
+    .dots:hover {
+        opacity: 4;
+    }
+    
+    /* 3 Buttons */
+    .label,
+    .share,
+    .dots {
+        position: absolute;
+        background-color: white;
+        padding: 6px 15px;
+        border-radius: 25px;
+        opacity: 0.8;
+        cursor: pointer;
+        bottom: -40px;
+        transition: bottom 0.3s ease-in-out;
+    }
+    
+    .label {
+        left: 5px;
+    }
+    .share {
+        right: 80px;
+    }
+    .dots{
+        right: 20px;
+    }
